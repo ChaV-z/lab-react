@@ -12,7 +12,7 @@ export default function CharacterCard(props) {
 
     useEffect(()=> {
         // console.log('useEffect')
-        if(attemptRef.current != props.attempt){
+        if(attemptRef.current !== props.attempt){
             setActive(false);
             attemptRef.current = props.attempt
         }
