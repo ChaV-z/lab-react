@@ -35,12 +35,12 @@ export default function WordCard(props){
             }
             else{
                 if(attempt<=2){
-                    alert("Wrong!");
+                    alert("Wrong Guesses: "+ attempt + " of 3");
                     setState({ ...state, guess: "", attempt: state.attempt + 1 });
                     attempt = state.attempt + 1;
                 }
                 else{
-                    alert("noo! You lost!!");
+                    alert("Wrong Guesses: " + attempt + " of 3\nnoo! You lost!!");
                     setState({ ...state, guess: "", completed: true });
                 }
             }
