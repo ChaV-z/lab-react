@@ -1,7 +1,6 @@
 import React from "react";
 import './App.css';
 import WordCard from './WordCard';
-import Header from './Header';
 
 const words = ["Hello", "React", "JavaScript", "html", "json"];
 let selectedWord = words[Math.floor(Math.random()*words.length)];
@@ -11,7 +10,8 @@ const reset = () => {
 function App() {
   	return (
 			<>
-				<Header />
+				<h1>What's the word?</h1>
+            	<p className="dotted">Your mission : Sort the words correctly!</p>
 				<div className='frame'>
 					<WordCard value={selectedWord} />
 				</div>
