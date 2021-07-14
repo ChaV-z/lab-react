@@ -37,12 +37,11 @@ export default function WordCard(props){
                 if(attempt<=2){
                     alert("Wrong!");
                     setState({ ...state, guess: "", attempt: state.attempt + 1 });
-                    console.log("before", attempt);
                     attempt = state.attempt + 1;
-                    console.log("after ", attempt);
                 }
                 else{
                     alert("noo! You lost!!");
+                    setState({ ...state, guess: "", completed: true });
                 }
             }
         }

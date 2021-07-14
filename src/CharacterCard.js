@@ -11,7 +11,7 @@ export default function CharacterCard(props) {
     }
 
     useEffect(()=> {
-        // console.log('useEffect')
+        console.log('useEffect')
         if(attemptRef.current !== props.attempt){
             setActive(false);
             attemptRef.current = props.attempt
@@ -20,6 +20,11 @@ export default function CharacterCard(props) {
 
     const className = `card ${active ? 'activeCard': ''}`
     return (
-        <div className={className} onClick={activate}>{props.value}</div>
-    )
+			<>
+				<div className={className} onClick={activate}>
+					{props.value}
+				</div>
+			</>
+		);
+    
 }

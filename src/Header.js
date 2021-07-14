@@ -4,9 +4,9 @@ const Header = () => {
     return (
         <>
             <h1>What's the word?</h1>
-            <p>Your mission : Sort the words correctly!</p>
+            <p className="dotted">Your mission : Sort the words correctly!</p>
         </>
-    )
+    );
 }
 
 export default Header
